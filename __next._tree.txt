@@ -1,0 +1,4 @@
+:HL["/ruby-roo/_next/static/chunks/491a9cb729c6076b.css","style"]
+:HC["/",""]
+:HL["https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=satoshi@300,400,500,700,300i,400i,500i,700i&display=swap","style"]
+0:{"buildId":"EaBq1FvB1ASlIeaQQjjWm","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
