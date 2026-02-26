@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/ruby-roo",
+  output: isProd ? "export" : undefined,
+  basePath: isProd ? "/ruby-roo" : "",
   images: {
     unoptimized: true,
   },
