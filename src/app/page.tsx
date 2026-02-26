@@ -12,6 +12,8 @@ import { LogoIcon } from "@/components/brand";
 import { Hexagon } from "@/components/brand";
 import { useRef, useState, useEffect } from "react";
 
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/ruby-roo" : "";
+
 /* ================================================================
    STAGGER ANIMATION HELPERS
    ================================================================ */
@@ -193,7 +195,7 @@ export default function Home() {
       >
         {/* Background image — full bleed, visible */}
         <Image
-          src="/images/hero-architecture.jpg"
+          src={`${BASE_PATH}/images/hero-architecture.jpg`}
           alt=""
           fill
           priority
@@ -266,7 +268,7 @@ export default function Home() {
           {/* Image side — people on laptops, online delivery */}
           <div className="relative h-[50vh] lg:h-auto">
             <Image
-              src="/images/education-online-laptops.jpg"
+              src={`${BASE_PATH}/images/education-online-laptops.jpg`}
               alt="Online education and training"
               fill
               className="object-cover"
@@ -366,7 +368,7 @@ export default function Home() {
               tag: "Design",
               title: "Apprenticeship Design",
               body: "Build programmes from scratch — or rebuild them properly. Curriculum mapped to new standards, assessment strategy designed backward from EPA, off-the-job structured to develop real skills.",
-              image: "/images/education-classroom-presentation.jpg",
+              image: `${BASE_PATH}/images/education-classroom-presentation.jpg`,
               points: ["Curriculum architecture", "Assessment framework design", "Off-the-job training structure", "Employer engagement model"],
               stat: "60.5%",
               statLabel: "national achievement rate — yours should be higher",
@@ -375,7 +377,7 @@ export default function Home() {
               tag: "Remediation",
               title: "Apprenticeship Remediation",
               body: "Your programme is failing and you know why — or worse, you don\u2019t. We diagnose the root causes, fix the delivery model, and rebuild what\u2019s broken before Ofsted does it for you.",
-              image: "/images/education-workshop.jpg",
+              image: `${BASE_PATH}/images/education-workshop.jpg`,
               points: ["Root cause analysis", "Dropout intervention systems", "Quality improvement planning", "Ofsted preparation"],
               stat: "38.1%",
               statLabel: "dropout rate — fixable, if you act now",
@@ -384,7 +386,7 @@ export default function Home() {
               tag: "Success",
               title: "Apprenticeship Success",
               body: "Get your learners across the line. EPA preparation that works, gateway reviews that catch gaps early, and progression pathways that prove the programme\u2019s value to everyone involved.",
-              image: "/images/workshop-success.jpg",
+              image: `${BASE_PATH}/images/workshop-success.jpg`,
               points: ["EPA readiness programme", "Gateway review process", "Evidence portfolio design", "Progression & destination tracking"],
               stat: "1 in 3",
               statLabel: "fail their EPA first time — yours won\u2019t",
@@ -454,7 +456,7 @@ export default function Home() {
 
       {/* --- Brochure image break --- */}
       <ImageBreak
-        src="/images/atmosphere-dark-office.jpg"
+        src={`${BASE_PATH}/images/atmosphere-dark-office.jpg`}
         alt="Modern workspace atmosphere"
         height="h-[45vh]"
       />
@@ -498,7 +500,7 @@ export default function Home() {
           {/* Image side — large, dramatic */}
           <div className="relative h-[50vh] lg:h-auto order-1 lg:order-2">
             <Image
-              src="/images/strategy-planning-board.jpg"
+              src={`${BASE_PATH}/images/strategy-planning-board.jpg`}
               alt="Strategic planning"
               fill
               className="object-cover"
@@ -511,7 +513,7 @@ export default function Home() {
 
       {/* --- Brochure image break --- */}
       <ImageBreak
-        src="/images/geometric-building.jpg"
+        src={`${BASE_PATH}/images/geometric-building.jpg`}
         alt="Modern architecture"
         height="h-[40vh]"
       />
@@ -570,7 +572,7 @@ export default function Home() {
 
       {/* --- Brochure image break --- */}
       <ImageBreak
-        src="/images/different-tools-building.jpg"
+        src={`${BASE_PATH}/images/different-tools-building.jpg`}
         alt="Hands building and creating"
         height="h-[35vh]"
       />
@@ -584,7 +586,7 @@ export default function Home() {
           {/* Image side — portrait style */}
           <div className="relative h-[45vh] lg:h-auto lg:col-span-2">
             <Image
-              src="/images/credibility-professional-woman.jpg"
+              src={`${BASE_PATH}/images/credibility-professional-woman.jpg`}
               alt="Professional setting"
               fill
               className="object-cover"
@@ -622,7 +624,7 @@ export default function Home() {
 
       {/* --- Brochure image break --- */}
       <ImageBreak
-        src="/images/transformation-clarity-focus.jpg"
+        src={`${BASE_PATH}/images/transformation-clarity-focus.jpg`}
         alt="Clarity and focus"
         height="h-[40vh]"
       />
@@ -683,7 +685,7 @@ export default function Home() {
       <section id="contact" className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background image */}
         <Image
-          src="/images/hero-dark-architecture.jpg"
+          src={`${BASE_PATH}/images/hero-dark-architecture.jpg`}
           alt=""
           fill
           className="object-cover"
